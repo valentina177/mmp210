@@ -1,0 +1,28 @@
+body{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.6054796918767507) 35%,
+ rgba(255,0,146,0.44021358543417366) 100%);
+
+	color:white;
+	font-family: Segoe UI, Helvetica;
+	font-size: 20px;
+}
+h1, p, a{
+	font-size: 1.5em;
+}
+a{
+	color: white;
+	transition: color 300ms  ease-in;
+}
+a:hover{color: #ff0092;}
+
+img{ max-width: 100% }
+
+#container{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.link{ list-style: none;
+
+}
