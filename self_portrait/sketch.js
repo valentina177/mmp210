@@ -23,7 +23,7 @@ function draw() {
 	rect(290,190, 55,20,10);
 
 	fill('WHITESMOKE');
-    rect(290,191, 53,10,5);
+    rect(291,191, 53,10,5);
 
 	
 //right ear
@@ -46,9 +46,16 @@ function draw() {
 
 //tongue
 	fill('PALEVIOLETRED');
-	arc(320,214,16,22, HALF_PI,HALF_PI);
+	arc(320, 208, 19, 30, 0, PI);
 
 
-    
+  //Hat
+  fill('DARKMAGENTA');
+	strokeWeight(2)
+	rect(276,130, 90,14,10);
+	arc(320, 123, 100-30, 100-60, 0, TWO_PI);
+
+
+   
 }
 
