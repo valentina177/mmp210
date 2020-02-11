@@ -27,28 +27,28 @@ function draw() {
 
 	fill('SADDLEBROWN')
 	stroke('white')
-	ellipse(x- 9, y- 20,30); //left eye
+	ellipse(x-20, y- 20,30); //left eye
 	ellipse(x+20,y-20, 30); //right eye
 
 	//mouth
 	fill('LIGHTPINK');
 	stroke('white');
 	strokeWeight(2)
-	rect(290,190, 55,20,10);
+	rect(x-35, y+26, 80,20,10);
 
 	fill('WHITESMOKE');
-    rect(291,191, 53,10,5);
+    rect(x-35,y+27, 80,10,5);
 
 	
 //right ear
 	fill('PEACHPUFF');
 	stroke('white');
-	arc(365,180,30,40,-HALF_PI,HALF_PI);
-	arc(365,180,20,30,-HALF_PI,HALF_PI);
+	arc(x+ 95,y,50,70,-HALF_PI,HALF_PI);
+	arc(x+95,y,30,40,-HALF_PI,HALF_PI);
 
 //left ear
-	arc(274,180,30,40, HALF_PI,-HALF_PI);
-	arc(274,180,20,30, HALF_PI, -HALF_PI);
+	arc(x-95,y,50,70, HALF_PI,-HALF_PI);
+	arc(x-95,y,30,40, HALF_PI, -HALF_PI);
 
 
 	//SHAPES THAT ARE ONLY XY POINTS
@@ -56,18 +56,18 @@ function draw() {
 //nouse
 	fill('LIGHTSALMON');
 	noStroke();
-	arc(320,180,20,10,-HALF_PI,HALF_PI);
+	arc(x,y+ 6,40,20,-HALF_PI,HALF_PI);
 
 //tongue
 	fill('PALEVIOLETRED');
-	arc(320, 208, 19, 30, 0, PI);
+	arc(x+3, y+46, 25, 33, 0, PI);
 
 
   //Hat
   fill('DARKMAGENTA');
 	strokeWeight(2)
-	rect(276,130, 90,14,10);
-	arc(320, 123, 100-30, 100-60, 0, TWO_PI);
+	rect(x-67,y-90, 160,20,10);
+	arc(x, y-90, 100-30, 100-60, 0, TWO_PI);
 
 
    
