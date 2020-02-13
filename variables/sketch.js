@@ -10,7 +10,8 @@ var y=180;
 
 
 // size variables
-var s = 10; // size of the face
+var s = 200; // size of the face
+var eyeSize = 30;
 
 function setup(){
 	//setup scope
@@ -26,22 +27,22 @@ function draw() {
 	fill('PEACHPUFF');
 	stroke('white');
 	strokeWeight(5)
-	ellipse(x, y, 200); //face area 
-	x++;
+	ellipse(x, y, s); //face area 
+	// x++;
 
 	fill('SADDLEBROWN')
 	stroke('white')
-	ellipse(x-20, y- 20,30); //left eye
-	ellipse(x+20,y-20, 30); //right eye
+	ellipse(x-20, y- 20, eyeSize); //left eye
+	ellipse(x+20,y-20, eyeSize); //right eye
 
 	//mouth
 	fill('LIGHTPINK');
 	stroke('white');
 	strokeWeight(2)
-	rect(x-35, y+26, 80,20,10);
+	rect(x-s/4, y+26, s/2, s/10, s/20);
 
 	fill('WHITESMOKE');
-    rect(x-35,y+27, 80,10,5);
+    rect(x-s/4,y+27, s/2, s/20, 5);
 
 	
 //right ear
@@ -72,7 +73,7 @@ function draw() {
 	strokeWeight(2)
 	rect(x-88,y-73, 175,20,10);
 	arc(x, y-90, 155, 100-27, 0, TWO_PI);
-	s++;
+	//s++;
 
    
 }
