@@ -8,6 +8,10 @@ by valentina
 var x= 320; //origin for face
 var y=180; 
 
+
+// size variables
+var s = 10; // size of the face
+
 function setup(){
 	//setup scope
 	createCanvas(640,360);
@@ -23,7 +27,7 @@ function draw() {
 	stroke('white');
 	strokeWeight(5)
 	ellipse(x, y, 200); //face area 
-	x++
+	x++;
 
 	fill('SADDLEBROWN')
 	stroke('white')
@@ -66,9 +70,9 @@ function draw() {
   //Hat
   fill('DARKMAGENTA');
 	strokeWeight(2)
-	rect(x-67,y-90, 160,20,10);
-	arc(x, y-90, 100-30, 100-60, 0, TWO_PI);
-
+	rect(x-88,y-73, 175,20,10);
+	arc(x, y-90, 155, 100-27, 0, TWO_PI);
+	s++;
 
    
 }
