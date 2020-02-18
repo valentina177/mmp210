@@ -22,13 +22,18 @@ function draw() {
 	//draw scope
 	background(220);
 
+	var x = pmouseX;
+	var y = pmouseY;
+
+	var v = min(200, frameCount * 4);
+
 	//shapes with xy coordinate + size
 
 	fill('PEACHPUFF');
 	stroke('white');
 	strokeWeight(5)
 	ellipse(x, y, s); //face area 
-	//x++;
+	// x++;
 
 	fill('SADDLEBROWN')
 	stroke('white')
@@ -64,12 +69,14 @@ function draw() {
 	arc(x,y+ 6,s/5,s/10,-HALF_PI,HALF_PI);
 
 //tongue
-	fill('PALEVIOLETRED');
-	arc(x+3, y+46,s/8, s/6, s-200, PI);
+	fill('PALEVIOLETRED',);
+	arc(x+3, y+46,s/8,v/7, s-200, PI);
 
 
   //Hat
-  fill('DARKMAGENTA');
+  	x = mouseX;
+	y = mouseY;
+  fill(mouseY,0,mouseX);
 	strokeWeight(2)
 	rect(x-98,y-73,s/1,s/10,s/10);
 	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
