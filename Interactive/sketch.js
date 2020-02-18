@@ -76,7 +76,7 @@ function draw() {
   //Hat
   	x = mouseX;
 	y = mouseY;
-  fill(mouseY,0,mouseX);
+  fill(mouseY,0,mousex);
 	strokeWeight(2)
 	rect(x-98,y-73,s/1,s/10,s/10);
 	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
