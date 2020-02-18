@@ -42,18 +42,18 @@ function draw() {
 	rect(x-s/4, y+26, s/2, s/10, s/20);
 
 	fill('WHITESMOKE');
-    rect(x-s/4,y+27, s/2, s/20, 5);
+    rect(x-s/4,y+27, s/2, s/20, s/40);
 
 	
 //right ear
 	fill('PEACHPUFF');
 	stroke('white');
-	arc(x+ 95,y,50,70,-HALF_PI,HALF_PI);
-	arc(x+95,y,30,40,-HALF_PI,HALF_PI);
+	arc(x+ 95,y,s/4,s/3,-HALF_PI,HALF_PI);
+	arc(x+95,y,s/7,s/5,-HALF_PI,HALF_PI);
 
 //left ear
-	arc(x-95,y,50,70, HALF_PI,-HALF_PI);
-	arc(x-95,y,30,40, HALF_PI, -HALF_PI);
+	arc(x-95,y,s/4,s/3, HALF_PI,-HALF_PI);
+	arc(x-95,y,s/7,s/5, HALF_PI, -HALF_PI);
 
 
 	//SHAPES THAT ARE ONLY XY POINTS
@@ -61,18 +61,18 @@ function draw() {
 //nouse
 	fill('LIGHTSALMON');
 	noStroke();
-	arc(x,y+ 6,40,20,-HALF_PI,HALF_PI);
+	arc(x,y+ 6,s/5,s/10,-HALF_PI,HALF_PI);
 
 //tongue
 	fill('PALEVIOLETRED');
-	arc(x+3, y+46, 25, 33, 0, PI);
+	arc(x+3, y+46,s/8, s/6, s-200, PI);
 
 
   //Hat
   fill('DARKMAGENTA');
 	strokeWeight(2)
-	rect(x-88,y-73, 175,20,10);
-	arc(x, y-90, 155, 100-27, 0, TWO_PI);
+	rect(x-98,y-73,s/1,s/10,s/10);
+	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
 	//s++;
 
    
