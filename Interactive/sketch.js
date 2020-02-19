@@ -79,4 +79,4 @@ function draw() {
 	rect(x-98,y-73,s/1,s/10,s/10);
 	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
 	//s++;
-} 
+}
