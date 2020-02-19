@@ -24,8 +24,7 @@ function draw() {
 
 	var x = pmouseX;
 	var y = pmouseY;
-
-	var v = min(200, frameCount * 4);
+	var v = min(400, frameCount * 4);
 
 	//shapes with xy coordinate + size
 
@@ -71,17 +70,13 @@ function draw() {
 //tongue
 	fill('PALEVIOLETRED',);
 	arc(x+3, y+46,s/8,v/7, s-200, PI);
-
-
+ 
   //Hat
   	x = mouseX;
 	y = mouseY;
-  fill(mouseY,0,mousex);
+  	fill(mouseY,0,mouseX);
 	strokeWeight(2)
 	rect(x-98,y-73,s/1,s/10,s/10);
 	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
 	//s++;
-
-   
-}
-
+} 
