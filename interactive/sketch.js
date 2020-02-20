@@ -9,9 +9,11 @@ var x= 320; //origin for face
 var y=180; 
 
 
+
 // size variables
 var s = 200; // size of the face
 var eyeSize = 30;
+var e=30;
 
 function setup(){
 	//setup scope
@@ -28,12 +30,23 @@ function draw() {
 
 	//shapes with xy coordinate + size
 
+
+	//circle background
+	fill(255,215,0);
+	circle(x-70, y- 20, e);//left 
+	circle(x+70,y-20, e);//right circle
+	circle(x-10,y+60, e);//down
+
+	
+
+	//face area
 	fill('PEACHPUFF');
 	stroke('white');
 	strokeWeight(5)
-	ellipse(x, y, s); //face area 
+	ellipse(x, y, s);  
 	// x++;
 
+	//eyes
 	fill('SADDLEBROWN')
 	stroke('white')
 	ellipse(x-20, y- 20, eyeSize); //left eye
@@ -80,3 +93,9 @@ function draw() {
 	arc(x, y-90, s/1.2, s/2.8, s-200, TWO_PI);
 	//s++;
 }
+
+
+
+function mousePressed() {
+	e += 10;}
+
