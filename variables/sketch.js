@@ -28,7 +28,7 @@ function draw() {
 	stroke('white');
 	strokeWeight(5)
 	ellipse(x, y, s); //face area 
-	//x++;
+	// x++;
 
 	fill('SADDLEBROWN')
 	stroke('white')
