@@ -15,6 +15,9 @@ var s = 200; // size of the face
 var eyeSize = 30;
 var e=30;
 
+//colors RGB
+var r = 255, g = 255, b = 255; 
+
 function setup(){
 	//setup scope
 	createCanvas(640,360);
@@ -83,6 +86,7 @@ function draw() {
 //tongue
 	fill('PALEVIOLETRED',);
 	arc(x+3, y+46,s/8,v/7, s-200, PI);
+	r = map(mouseY, 0, width, 0, 255); // red
  
   //Hat
   	x = mouseX;
