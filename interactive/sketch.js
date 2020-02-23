@@ -26,7 +26,7 @@ function setup(){
 function draw() {
 	//draw scope
 	background(220);
-
+	
 	var x = pmouseX;
 	var y = pmouseY;
 	var v = min(400, frameCount * 4);
@@ -35,12 +35,14 @@ function draw() {
 
 
 	//circle background
-	fill(255,215,0);
+	fill(r,g,b);
+	 r = 0; // red;
+	 g = map(mouseX, 0, width, 0, 255); // green
+	 b = map(mouseY, 0, height, 0, 255); // blue
+
 	circle(x-70, y- 20, e);//left 
 	circle(x+70,y-20, e);//right circle
 	circle(x-10,y+60, e);//down
-
-	
 
 	//face area
 	fill('PEACHPUFF');
@@ -64,6 +66,10 @@ function draw() {
 	fill('WHITESMOKE');
     rect(x-s/4,y+27, s/2, s/20, s/40);
 
+    fill(255,215,0);
+    noStroke();
+    rect(x-s/8, y+26, s/17, s/17);
+
 	
 //right ear
 	fill('PEACHPUFF');
@@ -78,16 +84,16 @@ function draw() {
 
 	//SHAPES THAT ARE ONLY XY POINTS
 
-//nouse
+	//nouse
 	fill('LIGHTSALMON');
 	noStroke();
 	arc(x,y+ 6,s/5,s/10,-HALF_PI,HALF_PI);
 
-//tongue
-	fill('PALEVIOLETRED',);
+	//tongue
+	fill('PALEVIOLETRED');
 	arc(x+3, y+46,s/8,v/7, s-200, PI);
-	r = map(mouseY, 0, width, 0, 255); // red
- 
+
+	
   //Hat
   	x = mouseX;
 	y = mouseY;
@@ -99,7 +105,9 @@ function draw() {
 }
 
 
-
-function mousePressed() {
+	//circle backgrounds
+	function mousePressed() {
 	e += 10;}
+
+
 
