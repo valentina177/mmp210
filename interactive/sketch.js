@@ -15,8 +15,10 @@ var s = 200; // size of the face
 var eyeSize = 30;
 var e=30;
 
+
 //colors RGB
 var r = 255, g = 255, b = 255; 
+
 
 function setup(){
 	//setup scope
@@ -44,12 +46,14 @@ function draw() {
 	circle(x+70,y-20, e);//right circle
 	circle(x-10,y+60, e);//down
 
+
 	//face area
 	fill('PEACHPUFF');
 	stroke('white');
 	strokeWeight(5)
 	ellipse(x, y, s);  
 	// x++;
+
 
 	//eyes
 	fill('SADDLEBROWN')
@@ -61,14 +65,14 @@ function draw() {
 	fill('LIGHTPINK');
 	stroke('white');
 	strokeWeight(2)
-	rect(x-s/4, y+26, s/2, s/10, s/20);
+	rect(x-s/4, y+26, s/2, s/10, s/20);//background
 
 	fill('WHITESMOKE');
-    rect(x-s/4,y+27, s/2, s/20, s/40);
+    rect(x-s/4,y+27, s/2, s/20, s/40);//teeth
 
     fill(255,215,0);
     noStroke();
-    rect(x-s/8, y+26, s/17, s/17);
+    rect(x-s/8, y+26, s/17, s/17);//gold tooth
 
 	
 //right ear
