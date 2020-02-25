@@ -1,4 +1,4 @@
-/* self potrait with variables 
+/* Interactive self potrait 
 by valentina
 2.11.2020
 
