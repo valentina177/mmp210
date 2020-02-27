@@ -5,6 +5,11 @@ by valentina
 */
  //global scope
 
+var Image;
+
+function preload(){
+
+}
 
 function setup(){
 	//setup scope
@@ -14,7 +19,10 @@ canvas.drawingContext.miterLimit = 2;
 
 function draw() {
 	//draw scope
-	background(220);
+	background(220); 
+
+	//draw the image
+	image(Image,0,0);
 
 
 	textSize(40);
