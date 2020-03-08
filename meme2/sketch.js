@@ -67,7 +67,7 @@ function draw() {
 		text('Do NOT click on me.', 500, 290);
 	} else if (counter == 1) {
 		image(foxImage,170, 2, width/2, height/1);
-		text('You woke me up!',320, 280);
+		text('You woke me up!',500, 280);
 	}
 
 
