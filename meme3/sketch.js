@@ -7,6 +7,7 @@ by valentina
 
 var foxImage;
 var sleepingImage;
+var zzzImage;
 var x=0;
 var y=0;
 
@@ -14,6 +15,7 @@ var sleepingSize;
 var sleepingSizeSpeed=5;
 
 var foxX;
+var zzz; 
 
 
 var counter= 0;
@@ -22,7 +24,7 @@ var counter= 0;
 function preload(){
 	foxImage = loadImage("foxx.png");
 	sleepingImage= loadImage("sleeping.png")
-
+	zzzImage= loadImage("zzz.png")
 }
 
 function setup(){
@@ -35,6 +37,7 @@ function setup(){
 
 	sleepingSize=width;
 	foxX=0;
+	zzz=0;
 }
 
 function mousePressed() {
@@ -66,11 +69,16 @@ function draw() {
 	if (counter == 0){
 
 		imageMode(CENTER);
-		image(sleepingImage, width/2, height/2,sleepingSize, sleepingSize);
+		image(sleepingImage, width/2, height/2,sleepingSize/4, sleepingSize/4);
 
 		sleepingSize += sleepingSizeSpeed;
 		if (sleepingSize> width*2 || sleepingSize < width - sleepingSizeSpeed){
 			sleepingSizeSpeed*= -1;}
+
+			else if (counter==0){
+				text('I am sleeping.', 120, 50);
+		 		text('Do NOT click on me.', 500, 290);
+			}
 			
 			}
 
