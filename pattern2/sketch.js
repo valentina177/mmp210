@@ -13,7 +13,7 @@ function setup(){
 	var canvas = createCanvas(640,360);
 	canvas.parent("sketch");
 
-	createP("Flowers sizes").position(0,399).parent("sketch");
+	createP("Flowers size").position(0,399).parent("sketch");
 
 	flowerSlider= createSlider(10, 100, 45);
 	flowerSlider.input(pattern);
