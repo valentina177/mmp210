@@ -14,7 +14,6 @@ function setup(){
 	canvas.parent("sketch");
 
 	createP("Flowers size").position(0,399).parent("sketch");
-
 	flowerSlider= createSlider(10, 100, 45);
 	flowerSlider.input(pattern);
 	flowerSlider.parent("sketch");
@@ -50,7 +49,6 @@ function pattern() {
 	background(colorPicker.color());
 	
 	
-
   for (let x = 0; x < width; x += flowerSlider.value()) {
 
 //colors
@@ -62,7 +60,7 @@ function pattern() {
 
     push();
 
-    translate(x,random(0, 260) );
+    translate(x,random(0, 350) );
     fill(r, g, b, random(127,160));
     noStroke();
     for (let i = 0; i < 10; i++) {
