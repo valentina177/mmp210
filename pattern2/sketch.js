@@ -51,8 +51,6 @@ function pattern() {
 	
 	
 
-  translate(0, random(0,10));
- 
   for (let x = 0; x < width; x += flowerSlider.value()) {
 
 //colors
