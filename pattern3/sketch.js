@@ -37,7 +37,7 @@ function pattern(){
 	//draw scope
 	background(253,239,223);
 	
-	var w = 150
+	var w = 145
 	var h = w; 
   
   	for (let x = 0; x <= width; x += w) {
