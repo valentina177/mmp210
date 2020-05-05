@@ -95,7 +95,7 @@ function draw() {
 	endless.setVolume(volume);
 	pianoandcello.setVolume(volume);
 
-	var pan = map(mouseX, 0, width, -100, 100);
+	var pan = map(mouseX, 0, width, -1, 1);
 	mise_sadness.pan(pan);
 	musicnotes.pan(pan);
 	acousticmusic.pan(pan);
