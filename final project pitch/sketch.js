@@ -73,7 +73,7 @@ function draw() {
 
 	} else if (currentSlide == 1) {
 		title = "User interaction";
-		description = "The user can iteract with the shapes and images to listen to different sounds using the mouse or some keys.";
+		description = "The user can iteract with the shapes and images to listen to different sounds using the mouse or some keys. ";
 	
 		// background
 		var w = 55;
@@ -101,12 +101,14 @@ function draw() {
 
 	} else if (currentSlide == 2) {
 		title = "Graphics";
-		description = " I will use p5 shapes, sounds, colors,text, and images.";
+		description = " I will use p5 shapes, sounds, colors,text, and images. Some shapes like the ones on the left.";
+
 
 		// background
 		var w = 55;
         for (let x = 0; x < width; x += w+2) {
             for (let y = 0; y < height; y += w+2) {
+
 
             fill(192, 192, 192,20);
             rect( 30 , 20 ,578 ,320 );
@@ -126,6 +128,17 @@ function draw() {
         }
          
         }
+
+		 
+ 	 fill(250, 100, 100);
+ 	 rect(120, 220, 50, 90);
+  
+  	fill(100, 100, 250);
+  	arc(120, 220,89, 150, 0, HALF_PI);
+  	fill(255)
+ 	noStroke();
+  	arc(145, 220, 50, 30, 0, HALF_PI+ HALF_PI);
+
 	}
 
 	// display title
