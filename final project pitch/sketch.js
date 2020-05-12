@@ -44,7 +44,7 @@ function draw() {
 	// setup each slide
 	if (currentSlide == 0) {
 		title = "My final project";
-		description = "my project will have figures that will create a food area, it will have some images and sound.";
+		description = "My project will have figures that will create a food area, I will add some images and sound..";
 		
 		  
 
@@ -73,7 +73,7 @@ function draw() {
 
 	} else if (currentSlide == 1) {
 		title = "User interaction";
-		description = "The user can iteract with the shapes and images to listen to different sounds usisng the mouse or some keys.";
+		description = "The user can iteract with the shapes and images to listen to different sounds using the mouse or some keys.";
 	
 		// background
 		var w = 55;
