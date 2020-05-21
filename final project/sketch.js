@@ -14,8 +14,8 @@ by valentina
 
  
 
- m = mouseX;
-   c = mouseY;
+
+
 
 function preload(){
 
@@ -45,6 +45,8 @@ function setup() {
 
 
 function pattern() {
+
+
 background(205, 133, 63);
   
    fill(245, 245, 245);
@@ -127,7 +129,7 @@ stroke(128, 128, 128);
   
    
   //French fries
-  
+  push();
  scale(0.4);
   
  //package
@@ -174,6 +176,8 @@ stroke(128, 128, 128);
   strokeWeight(4);
   noFill();
   curve(700, 400, 755, 510, 580, 505, 400, 220); 
+
+
 
 
 
@@ -263,81 +267,30 @@ stroke(128, 128, 128);
    fill(220, 220, 220);
   rect(v+609, b+175, 15, 10, 3);
     rect(v+612,b+189, 10, 10, 3);
+ pop();
 
-
-if (counter == 0){
-
-    imageMode(CENTER);
-    image(handImage, mouseX, mouseY);}
 
 
 }
 
 function draw() {
-  
- if (ambientSong.isPlaying()) {
-   //table 
+ pattern();
+
+
+   if (counter == 0){
+
+    scale(1.5);
+  noCursor();
+    image(handImage, mouseX, mouseY);
+
+ }
+
+
+    }
+
+  function mousePressed(){
+  ambientSong.play();
  
-   var x = 110;
-  var y = 300;
-  var w = 420;
-  var w2 = 190; // back width
-  var h = 50;
-
-  var n = 5; // number of planks
-  
-  stroke(110, 44, 0);
-  strokeWeight(1);
-
-  // count backwards
-  for (let i = n; i > 0; i--) {
-    
-    // plank color/style
-    if (i % 2 == 0) {
-      // even planks
-      fill(202, 111, 30 );
-    } else {
-      // odd planks
-      fill(175, 96, 26  );
-    }
-
-    /* quads  go in clockwise order
-                
-     back/top           point2  point3
-     front/bottom       point1  point4
-    */
-
-    var top = i * h / n;
-    var bottom = (i - 1) * h / n;
-   
-    var back = i * (w - w2) / (n * 2);
-    var front = (i - 1) * (w - w2) / (n * 2);
-
-    quad(
-      x + front, y - bottom,
-      x + back, y - top,
-      x + w - back, y - top,
-      x + w - front, y - bottom
-    );
-  }
-  
-  
-  //legs 
-  quad(x, y, x, y + 130, x + 20, y + 130, x + 30, y);//left leg
-  
-  quad(x+130, y, x+120, y + 70, x + 100, y + 70, x + 100, y);//back left leg
-  
-  quad(x+420, y, x+420, y + 130, x + 400, y + 130, x + 389, y);//right leg
-  
-    quad(x+320, y, x+320, y + 70, x + 300, y + 70, x + 290, y);//back right leg
-  
-  // front quad is flat
-  fill(202, 111, 30 );
-  
-  quad(x, y, x, y + 30, x + w, y + 30, x + w, y);//front plank
-  
-  
   
   }
-    }
 
