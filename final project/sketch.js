@@ -359,7 +359,7 @@ function pattern() {
 
 }
 
-  
+  //music
 function mousePressed(){
   //ambientSong.play();
  
