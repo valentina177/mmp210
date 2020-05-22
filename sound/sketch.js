@@ -86,7 +86,8 @@ function draw() {
 		ellipse(480, 150, 75);
    		ellipse(450, 100, 75);
 	}
-
+   
+   //volume 
 	var volume = map(mouseY, 0, height, 1, 0);
 	mise_sadness.setVolume(volume);
 	musicnotes.setVolume(volume);
@@ -94,6 +95,8 @@ function draw() {
 	music1.setVolume(volume);
 	endless.setVolume(volume);
 	pianoandcello.setVolume(volume);
+
+	//left and rigth speaker 
 
 	var pan = constrain(map(mouseX, 0, width, -1, 1), -1, 1);
 	mise_sadness.pan(pan);
@@ -108,7 +111,7 @@ function draw() {
 	var y = pmouseY;
 	var s = 30;
 
-
+    //flower
   	fill(160, 82, 45);
   	stroke('white');
 	strokeWeight(4);
