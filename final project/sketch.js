@@ -359,18 +359,15 @@ function pattern() {
     }
   }
   
-
 }
 
   //music
 function mousePressed(){
-  //ambientSong.play();
- 
-  if (ambientSong.isPlaying()){
-     ambientSong.pause();
-  }else {
-      ambientSong.play();
-    }
+  
+  if (!ambientSong.isPlaying()){
+     ambientSong.play();
+
+     }
 
 
   }
@@ -381,15 +378,11 @@ function keyPressed() {
 
   // space key
   if (keyCode == 32) {
-    if (emptySpace.isPlaying()) { 
-      emptySpace.pause();
-
-    
-    } else {
-     emptySpace.play();
-
+  
+      ambientSong.stop();
+      emptySpace.play();
+   
     }
   }
-}
   
 
