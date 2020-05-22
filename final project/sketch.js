@@ -9,6 +9,7 @@ by valentina
  var handImage;
 
   var ambientSong;
+  var emptySpace;
 
 //handImage counter
   var counter= 0;
@@ -30,6 +31,7 @@ function preload(){
   //music 
 
   ambientSong = loadSound("ambient.wav");
+  emptySpace = loadSound("emptyspace.wav");
 
 
 }
@@ -167,7 +169,7 @@ function draw() {
 
 
 
- if (ambientSong.isPlaying()) {
+ if (emptySpace.isPlaying()) {
 
 
   scale(0.4);
@@ -373,5 +375,20 @@ function mousePressed(){
   }
 
  
+function keyPressed() {
+
+
+  // space key
+  if (keyCode == 32) {
+    if (emptySpace.isPlaying()) { 
+      emptySpace.pause();
+
+    
+    } else {
+     emptySpace.play();
+
+    }
+  }
+}
   
 
