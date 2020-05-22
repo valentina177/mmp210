@@ -1,3 +1,11 @@
+
+/* self portrait
+by valentina
+2.9.2020
+
+*/
+ //global scope
+
 function setup(){
 	createCanvas(640,360);
 }
