@@ -285,6 +285,7 @@ function draw() {
 
     var pan = constrain(map(mouseX, 0, width, -1, 1), -1, 1);
     ambientSong.pan(pan);
+    emptySpace.pan(pan);
   
   
 }
